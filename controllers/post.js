@@ -1,5 +1,5 @@
 import express from "express";
-import { Post } from "../models/Post.js";
+import {Post} from "../models/post.js";
 
 
 export const createBlog = async(req,res)=>{
