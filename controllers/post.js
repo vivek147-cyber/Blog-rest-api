@@ -109,14 +109,6 @@ export const getBlog = async(req,res)=>{
 
 export const getallBlog = async(req,res)=>{
 
-    const {token} = req.cookies;
-    
-    if(!token)
-     return res.status(404).json({
-             success : false,
-             message : "Login First",   
-    })
-    
     const catName = req.query.cat
     try {
       let posts
